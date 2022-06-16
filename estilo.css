@@ -1,0 +1,26 @@
+#sec{
+  width: 300px;
+  margin: 0px auto;
+}
+h1{
+  text-align: center;
+}
+#camposGroup{
+  width: 175px;
+  margin: 0px auto;
+}
+.campo{
+  display: inline-block;
+  width: 50px;
+}
+#btnS{
+  display: block;
+  width: 100px;
+  margin: 10px auto;
+}
+#numSorteado{
+  display: block;
+  width: 100px;
+  text-align: center;
+  margin: 0px auto;
+}
