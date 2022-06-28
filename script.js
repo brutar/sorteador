@@ -1,5 +1,7 @@
 const btnSortear = document.querySelector('#btnS');
 
+var parabens = "Parabéns!!!"
+
 btnSortear.addEventListener("click", function(e){
     e.preventDefault();
     document.querySelector('#numSorteado').innerHTML = "";
@@ -19,7 +21,7 @@ btnSortear.addEventListener("click", function(e){
     if ((typeof nI == 'number'&&  !isNaN(nI) && nI >= 0 ) && (typeof nF == 'number' && !isNaN(nF) && nF >=0)){
         var numR = sorteaNumero(nI,nF);
         //mostra numero sorteado
-        setTimeout(()=>{document.querySelector('#numSorteado').innerHTML = parseInt(numR)},1000);
+        setTimeout(()=>{document.querySelector('#numSorteado').innerHTML = parseInt(numR) + "<br> "+ parabens},1000);
     }else{
       limpaCampo();
       //mostra msg caso a validação não passe

@@ -24,3 +24,13 @@ h1{
   text-align: center;
   margin: 0px auto;
 }
+#txt{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#logo-cliente{
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
