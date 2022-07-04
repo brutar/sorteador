@@ -1,6 +1,6 @@
 const btnSortear = document.querySelector('#btnS');
 
-var parabens = "Parabéns!!!"
+var parabens = "Parabéns!"
 
 btnSortear.addEventListener("click", function(e){
     e.preventDefault();
