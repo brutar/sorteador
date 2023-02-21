@@ -15,13 +15,16 @@ btnSortear.addEventListener("click", function(e){
         document.getElementById('campo2').value = '';
     }
     //pega os numeros dos campos de entrada
-    var nI = parseInt(document.getElementById('campo1').value);
-    var nF = parseInt(document.getElementById('campo2').value);
+    var numeroCampoUm = Number(document.getElementById('campo1').value);
+    var numeroCampoDois = Number(document.getElementById('campo2').value);
+    console.log(typeof numeroCampoUm);
     //valida se é numero inteiro maior ou igual a 0
-    if ((typeof nI == 'number'&&  !isNaN(nI) && nI >= 0 ) && (typeof nF == 'number' && !isNaN(nF) && nF >=0)){
-        var numR = sorteaNumero(nI,nF);
+    if ((typeof numeroCampoUm === "number" &&  !isNaN(numeroCampoUm) && numeroCampoUm >=1) && (typeof numeroCampoDois === "number" && !isNaN(numeroCampoDois) && numeroCampoDois >=1)){
+        var numeroSorteado = sorteaNumero(numeroCampoUm,numeroCampoDois);
+        
+        //setTimeout(()=>{document.querySelector('.c-loaer').setAttribute('hidden',' ')},2000);    
         //mostra numero sorteado
-        setTimeout(()=>{document.querySelector('#numSorteado').innerHTML = parseInt(numR) + "<br> "+ parabens},1000);
+        setTimeout(()=>{document.querySelector('#numSorteado').innerHTML = parseInt(numeroSorteado) + "<br> "+ parabens},2000);
     }else{
       limpaCampo();
       //mostra msg caso a validação não passe
