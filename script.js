@@ -20,7 +20,7 @@ btnSortear.addEventListener("click", function(e){
     console.log(typeof numeroCampoUm);
     //valida se é numero inteiro maior ou igual a 0
     if ((typeof numeroCampoUm === "number" &&  !isNaN(numeroCampoUm) && numeroCampoUm >=1) && (typeof numeroCampoDois === "number" && !isNaN(numeroCampoDois) && numeroCampoDois >=1)){
-        var numeroSorteado = sorteaNumero(numeroCampoUm,numeroCampoDois);
+        var numeroSorteado = sorteaNumero(numeroCampoUm, numeroCampoDois);
         
         //setTimeout(()=>{document.querySelector('.c-loaer').setAttribute('hidden',' ')},2000);    
         //mostra numero sorteado
