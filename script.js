@@ -28,6 +28,6 @@ btnSortear.addEventListener("click", function(e){
     }else{
       limpaCampo();
       //mostra msg caso a validação não passe
-      document.querySelector('#numSorteado').innerHTML = "Digite um numero inteiro maior que 1";
+      document.querySelector('#numSorteado').innerHTML = "Digite um numero inteiro maior ou igual 1";
     }
 });
